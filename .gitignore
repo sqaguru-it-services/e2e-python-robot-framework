@@ -1,0 +1,6 @@
+__pycache__/
+dependencies
+output/
+report/
+venv/
+.vscode
