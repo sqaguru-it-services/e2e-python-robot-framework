@@ -4,12 +4,7 @@ Resource        ..${/}main.resource
 
 *** Keywords ***    
 Launch Browser
-    Log To Console    ${chrome_mode}
-    IF    "${chrome_mode}" == "headless"
-        Open Browser        brower=Headless Chrome
-    ELSE
-        Open Browser         browser=Chrome        
-    END
+    Open Browser         browser=${browser}        
     Maximize Browser Window
     Go To    ${base_url}
     
